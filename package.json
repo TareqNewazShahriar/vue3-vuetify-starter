@@ -1,5 +1,5 @@
 {
-  "name": "vue5",
+  "name": "vue3-vuetify3-starter",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
