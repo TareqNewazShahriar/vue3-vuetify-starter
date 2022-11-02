@@ -6,9 +6,9 @@ defineProps<{
 }>()
 
 interface YesNoResponse {
-	answer: String,
-	forced: Boolean,
-	image: String
+	answer: string,
+	forced: boolean,
+	image: string
 }
 
 let yesno = reactive({} as YesNoResponse);
@@ -23,7 +23,7 @@ fetch('https://yesno.wtf/api')
     <h1 class="green">{{ msg }}</h1>
 	<div>
 		<div>answer: {{ yesno.answer }}</div>
-		<div><img :src="yesno.image" /></div>
+		<div><img v-bind:src="yesno.image || 'javascript:void(0)'" alt="yes/no gif" /></div>
 	</div>
   </div>
 </template>
